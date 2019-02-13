@@ -64,9 +64,6 @@ def exit_button():
 def exit_program(button):
     raise urwid.ExitMainLoop()
 
-def is_top(button):
-    frame.footer = urwid.AttrWrap(urwid.Text(
-        [u"Pressed: ", button.get_label()] ), 'header')
 
 main = urwid.Padding(start(), left=2, right=2)
 
